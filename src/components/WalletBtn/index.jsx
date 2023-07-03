@@ -3,9 +3,9 @@ import { RiArrowRightSLine } from "react-icons/ri";
 const WalletBtn = ()=>{
     return  (
         <div className={styles.btn_container}>
-        <button className={styles.Wallet_btn} >CONNECT WALLET
-        </button>
-        <button className={styles.child_btn}><RiArrowRightSLine/></button>
+            <button className={styles.Wallet_btn} >CONNECT WALLET
+            </button>
+            <button className={styles.child_btn}><RiArrowRightSLine/></button>
         </div>
         )
 }

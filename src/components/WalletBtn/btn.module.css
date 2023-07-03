@@ -25,3 +25,21 @@ text-transform: uppercase;
     margin: 1px;
     margin-top: 1.5px;
 }
+
+@media (max-width: 500.98px){
+    .btn_container{
+        /* border: 1px solid white; */
+        width: 155px;
+       
+    }
+    .Wallet_btn{
+        /* padding: 5px 0 5px 20px; */
+        padding: 5px 12px;
+        color: white;    
+        font-size: 12px;
+    }
+
+    .child_btn{
+        padding: 5px 10px;
+    }
+}

@@ -18,7 +18,7 @@
 
 .app_navbar {
   position: relative;
-  height: 50px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,14 +36,20 @@
 .navlinks_items ul {
   display: flex;
   list-style: none;
-  color: #fff;
+  color: #505050;
   line-height: 50px;
+  
 }
 
 .navlinks_items ul li {
   margin: 0px 20px;
+  transition: .1s;
 }
+.navlinks_items ul li:hover{
+  color: white;
+  border-bottom: 4px solid white;
 
+}
 /* responsive items menu section */
 .responsive_navitems_container {
   position: fixed;
@@ -98,17 +104,18 @@
 
 /* break points */
 
-/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-}
+
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 }
-
-/* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .main_para {
+    font-size: 80px;
+  }
 }
+
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -116,10 +123,17 @@
     font-size: 70px !important;
   }
 }
-
-/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
   .main_para {
-    font-size: 80px;
+    font-size: 60px !important;
   }
 }
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .main_para {
+    font-size: 45px !important;
+  }
+}
+

@@ -14,10 +14,11 @@ const Navbar = () => {
 
         <div className="navlinks_items px-5 d-lg-block d-none">
           <ul className="px-0 d-flex">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li className={styles.nav_items} >HOME</li>
+            <li className={styles.nav_items} >ABOUT US</li>
+            <li className={styles.nav_items} >PRODUCTS</li>
+            <li className={styles.nav_items} >TEAM</li>
+            <li className={styles.nav_items} >FAQS</li>
           </ul>
         </div>
 
