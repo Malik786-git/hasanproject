@@ -7,8 +7,19 @@
 .main_para {
   font-size: 90px;
 }
+.about_main_para{
+  font-size: 70px;
+  
+}
 .normal_para {
-  font-size: 16px;
+
+  color: rgba(255, 255, 255, 0.60);
+font-size: 16px;
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.16px;
 }
 
 
@@ -60,6 +71,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #050508 ;
   width: 100%;
   height: 100%;
   display: none;
@@ -114,6 +126,10 @@
   .main_para {
     font-size: 80px;
   }
+  .about_main_para{
+    font-size: 60px;
+    
+  }
 }
 
 
@@ -122,11 +138,19 @@
   .main_para {
     font-size: 70px !important;
   }
+  .about_main_para{
+    font-size: 55px;
+    
+  }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .main_para {
     font-size: 60px !important;
+  }
+  .about_main_para{
+    font-size: 50px;
+    
   }
 }
 

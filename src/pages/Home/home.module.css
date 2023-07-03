@@ -51,6 +51,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.16px;
+
 }
 .Rpara1{
     color: rgba(255, 255, 255, 0.70);
@@ -78,7 +79,9 @@ letter-spacing: -0.16px;
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-    
+    .social_icons_section{
+        display: none;
+    }
  }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -126,11 +129,11 @@ letter-spacing: -0.16px;
         /* border: 1px solid white; */
     }
  }
- @media (max-width: 320px){
+ @media (max-width: 340px){
     .btn_div{
         position: relative;
-        left: -100px;
-        width: 350px;
+        left: -80px;
+        width: 320px;
         /* border: 1px solid white; */
     }
  }

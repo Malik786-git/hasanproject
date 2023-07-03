@@ -1,9 +1,10 @@
 import styles from "./btn.module.css"
 import { RiArrowRightSLine } from "react-icons/ri";
-const WalletBtn = ()=>{
+const WalletBtn = (props)=>{
+    
     return  (
-        <div className={styles.btn_container}>
-            <button className={styles.Wallet_btn} >CONNECT WALLET
+        <div className={styles.btn_container} >
+            <button  className={styles.Wallet_btn} >CONNECT WALLET
             </button>
             <button className={styles.child_btn}><RiArrowRightSLine/></button>
         </div>

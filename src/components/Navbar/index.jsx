@@ -2,9 +2,11 @@ import logo from "../../assets/logo.png";
 import styles from "./navbar.module.css";
 import WalletBtn from "../WalletBtn";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const [hamburgerToggle, setHamburgerToggle] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <>
       <nav class="app_navbar px-lg-0 px-5">
@@ -14,8 +16,8 @@ const Navbar = () => {
 
         <div className="navlinks_items px-5 d-lg-block d-none">
           <ul className="px-0 d-flex">
-            <li className={styles.nav_items} >HOME</li>
-            <li className={styles.nav_items} >ABOUT US</li>
+            <li className={styles.nav_items} onClick={()=>{navigate("/")}} >HOME</li>
+            <li className={styles.nav_items} onClick={()=>{navigate("/about")}}  >ABOUT US</li>
             <li className={styles.nav_items} >PRODUCTS</li>
             <li className={styles.nav_items} >TEAM</li>
             <li className={styles.nav_items} >FAQS</li>
@@ -45,8 +47,8 @@ const Navbar = () => {
         <aside className="responsive_navitems_container">
           <div className="responsive_sidebar_navitems">
             <ul className="px-0">
-              <li>Home</li>
-              <li>About</li>
+              <li onClick={()=>{navigate("/")}}>Home</li>
+              <li onClick={()=>{navigate("/about")}} >About</li>
               <li>Products</li>
               <li>Team</li>
               <li>FAQS</li>
